@@ -19,7 +19,7 @@ namespace RoutingIssues.Controllers {
             return Ok(1);
         }
 
-        [HttpGet("MyRelatedItems/{param1:int}"), MapToApiVersion("2"), MapToApiVersion("3")]
+        [HttpGet("MyRelatedItems/{param1:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<IEnumerable<int>>> GetMyRelatedItems(int param1) {
