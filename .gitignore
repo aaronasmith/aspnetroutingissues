@@ -1,0 +1,9 @@
+.localhistory/
+.vs/
+.vscode/
+bin/
+obj/
+build/
+tools/
+test/
+artifacts/
